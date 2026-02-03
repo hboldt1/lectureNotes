@@ -50,15 +50,24 @@ I want to prove:
         and I am in the CS dept
 
 --> How would we translate to propositional logic?
+p and the q
+
 
 
 Propositional atoms:
+Premices: Im in the cs department
 
+Q:        Im in the ece department
+
+R:        I can log into the lab computers
 
 
 Translations:
-
-
+    - I am in the CS dept or I am in the ECE dept  p  or Q
+    - I am not in the ECE dept                     !Q 
+    - I can log in to the CS lab computers if im   p -> r
+        in the cs department
+    - I can log into the cs lan omputers and i am in the cs dept: r ^ p
 
 --> How to prove with a truth table?
 
@@ -73,7 +82,7 @@ Format for a truth table proof:
 
              (mark * for each premise/conclusion)
 --------------------------------------------------------------
-variables # (premise1, premise2, ..., premiseN) ⊢ conclusion
+variables # (premise1, premise2, ..., premiseN) ⊢(proves) conclusion
 ---------------------------------------------------------------
 ... fill in like a truth table for each premise and conclusion
 ---------------------------------------------------------------
